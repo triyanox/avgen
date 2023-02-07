@@ -68,4 +68,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Example
 
-![Avatar example](assets/avatar.png)
+![Avatar example](https://raw.githubusercontent.com/triyanox/avgen/master/assets/avatar.png)
+
