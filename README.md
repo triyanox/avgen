@@ -1,21 +1,21 @@
-# Avagen - A simple avatar generation tool
+# Avgen - A simple avatar generation tool
 
 ## Installation
 
-You can install `avagen` using `npm`:
+You can install `avgen` using `npm`:
 
 ```bash
-$ npm install avagen
+$ npm install avgen
 ```
 or using `yarn`:
 
 ```bash
-$ yarn add avagen
+$ yarn add avgen
 ```
 
 ## Usage
 
-`avagen` has a single method `generate` which takes an object with the following properties:
+`avgen` has a single method `generate` which takes an object with the following properties:
 
 - `name` - The name of the user for which the avatar is to be generated. This is used to generate the initials for the avatar.
 - `path` - The path to the directory where the avatar is to be saved. This is optional and defaults to `/public/avatars`.
@@ -31,7 +31,7 @@ $ yarn add avagen
 
 
 ```ts
-import { AvatarGenerator } from 'avagen';
+import { AvatarGenerator } from 'avgen';
 
 const avatar = await AvatarGenerator.generate({
   name : 'John Doe',
@@ -49,7 +49,7 @@ You can register custom fonts by passing an object or array of objects as a seco
 - `path` - The path to the font file.
 
 ```ts
-import { AvatarGenerator } from 'avagen';
+import { AvatarGenerator } from 'avgen';
 
 const avatar = await AvatarGenerator.generate({
   name : 'John Doe',

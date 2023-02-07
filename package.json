@@ -1,7 +1,14 @@
 {
+  "name": "avgen",
+  "author": "Mohamed Achaq",
+  "description": "Avgen - A simple avatar generation tool",
   "version": "0.3.0",
   "license": "MIT",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/triyanox/avgen.git"
+  },
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
@@ -31,8 +38,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "avgen",
-  "author": "Mohamed Achaq",
   "module": "dist/avgen.esm.js",
   "size-limit": [
     {
