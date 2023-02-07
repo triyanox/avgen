@@ -5,7 +5,7 @@
 You can install `avagen` using `npm`:
 
 ```bash
-$ npm install -g avagen
+$ npm install avagen
 ```
 or using `yarn`:
 
