@@ -9,6 +9,7 @@ const avatarGeneratorConfig = {
   path: '/public/avatars',
   width: 1000,
   font: 'Arial',
+  case: 'upper',
 };
 
 export default avatarGeneratorConfig;

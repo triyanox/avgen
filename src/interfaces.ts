@@ -1,4 +1,4 @@
-import { SKRSContext2D } from "@napi-rs/canvas";
+import { SKRSContext2D } from '@napi-rs/canvas';
 
 interface IAvatarGeneratorOptions {
   name: string;
@@ -12,6 +12,7 @@ interface IAvatarGeneratorOptions {
   fontWeight?: string;
   fontStyle?: string;
   fontFamily?: string;
+  case?: 'upper' | 'lower' | 'normal';
 }
 
 type Font =
@@ -50,7 +51,7 @@ interface IAvatarGenerator {
     text: string,
     x: number,
     y: number,
-    maxWidth: number,
+    maxWidth: number
   ) => void;
   /**
    *  Save the avatar to the path
@@ -80,4 +81,4 @@ interface IAvatarGenerator {
   registerFonts: (font: Font) => this;
 }
 
-export type { IAvatarGenerator, IAvatarGeneratorOptions, Font };
+export { IAvatarGenerator, IAvatarGeneratorOptions, Font };

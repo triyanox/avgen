@@ -19,6 +19,7 @@ export default class AvatarGenerator implements IAvatarGenerator {
   fontWeight: string;
   fontStyle: string;
   fontFamily: string;
+  case = 'upper';
 
   constructor(options: IAvatarGeneratorOptions) {
     this.name = options.name;
@@ -32,12 +33,16 @@ export default class AvatarGenerator implements IAvatarGenerator {
     this.fontStyle = options.fontStyle || avatarGeneratorConfig.fontStyle;
     this.fontFamily = options.fontFamily || avatarGeneratorConfig.fontFamily;
     this.path = options.path || avatarGeneratorConfig.path;
+    this.case = options.case || avatarGeneratorConfig.case;
   }
 
   getInitials() {
     const name = this.name.split(' ');
     if (name.length === 1) return name[0].charAt(0);
-    return name[0].charAt(0) + name[1].charAt(0);
+    const initials = name[0].charAt(0) + name[name.length - 1].charAt(0);
+    if (this.case === 'upper') return initials.toUpperCase();
+    if (this.case === 'lower') return initials.toLowerCase();
+    return initials;
   }
 
   generatePath() {
