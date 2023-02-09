@@ -27,6 +27,7 @@ $ yarn add avgen
 - `height` - The height of the avatar. This is optional and defaults to `1000`.
 - `width` - The width of the avatar. This is optional and defaults to `1000`.
 - `font` - The font of the initials. This is optional and defaults to `Arial`.
+- `case` - The case of the initials. This is optional and defaults to `uppercase`.
 
 
 
